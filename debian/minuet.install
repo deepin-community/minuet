@@ -1,0 +1,5 @@
+usr/bin/minuet
+usr/lib/*/libminuetinterfaces.so.*
+usr/lib/*/qt5/plugins/minuet/minuetfluidsynthsoundcontroller.so
+usr/share/*/org.kde.minuet.appdata.xml
+usr/share/applications/org.kde.minuet.desktop

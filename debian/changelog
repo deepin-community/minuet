@@ -1,0 +1,214 @@
+minuet (21.08.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.0).
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 16:39:30 +0900
+
+minuet (21.04.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.0).
+  * Borrow minimal upstream signing key from k3b.
+  * Drop Kubuntu from maintainer name.
+  * Removed Maximiliano Curia from the uploaders, thanks for your work
+    on the package!
+  * Added myself to the uploaders.
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 27 Apr 2021 23:07:27 +0900
+
+minuet (20.12.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Use secure URI in Homepage field.
+  * Set fields Upstream-Name, Upstream-Contact in debian/copyright.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+
+  [ Pino Toscano ]
+  * New upstream releasel
+  * Re-export upstream signing key without extra signatures.
+  * Update the build dependencies according to the upstream build system:
+    - bump KF packages to 5.15.0
+  * Bump Standards-Version to 4.5.1, no changes required.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 09 Jan 2021 12:30:14 +0100
+
+minuet (20.08.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 15 Aug 2020 09:44:46 +0200
+
+minuet (20.04.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Switch from dhmk to the dh sequencer:
+    - invoke the dh sequencer using the kf5 addon
+    - call the right debhelper command instead of $(overridden_command)
+    - manually force the generation of the substvars for the kde-l10n breaks
+  * Bump the debhelper compatibility to 13:
+    - switch the debhelper build dependency to debhelper-compat 13
+    - remove debian/compat
+    - stop passing --fail-missing to dh_missing, as it is not allowed anymore;
+      the same behaviour is the default in compat 13+
+  * Add Rules-Requires-Root: no.
+  * Bump Standards-Version to 4.5.0, no changes required.
+
+ -- Pino Toscano <pino@debian.org>  Mon, 03 Aug 2020 09:15:22 +0200
+
+minuet (19.12.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Add the configuration for the CI on salsa.
+  * Update the build dependencies according to the upstream build system:
+    - bump cmake to 3.5
+    - explicitly add gettext
+  * Bump the debhelper compatibility to 11:
+    - bump the debhelper build dependency to 11~
+    - bump compat to 11
+  * Switch Vcs-* fields to salsa.debian.org.
+  * Bump Standards-Version to 4.4.1, no changes required.
+  * Remove empty line at the end of changelog.
+  * Update watch file to the new release-service location.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 15 Dec 2019 23:36:18 +0100
+
+minuet (17.08.3-2) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+  * Bump Standards-Version to 4.1.3, no changes required.
+
+ -- Pino Toscano <pino@debian.org>  Thu, 11 Jan 2018 09:50:12 +0100
+
+minuet (17.08.3-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Maximiliano Curia ]
+  * New upstream release (17.08.1)
+  * Bump Standards-Version to 4.1.0.
+  * Update upstream metadata
+  * Update build-deps and deps with the info from cmake
+  * Bump kde-l10n breaks/replaces versions
+
+  [ Pino Toscano ]
+  * New upstream release.
+  * Bump Standards-Version to 4.1.2, no changes required.
+  * Simplify watch file, and switch it to https.
+  * Drop minuet-dev, since there is no stable API/ABI yet.
+  * Remove old minuet-data breaks/replaces from minuet.
+  * Simplify the install files.
+  * Remove unused build dependencies: libasound2-dev, libdrumstick-dev,
+    libkf5kio-dev, libkf5texteditor-dev, and libkf5xmlgui-dev.
+  * Update lintian overrides.
+  * Slightly improve the description of minuet-data.
+  * Align the versions of the build dependencies to the upstream requirements.
+  * Call dh_install with --fail-missing, so no file is missed.
+  * Drop autopkgtest running the test suite, since there is no test suite to
+    run.
+  * Update copyright.
+
+ -- Pino Toscano <pino@debian.org>  Fri, 15 Dec 2017 17:52:07 +0100
+
+minuet (17.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 05 Sep 2017 14:06:42 +0000
+
+minuet (17.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Aug 2017 09:43:08 +0000
+
+minuet (17.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 12 Jul 2017 10:26:40 +0000
+
+minuet (17.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 07 Jun 2017 12:25:02 +0000
+
+minuet (17.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 11 May 2017 18:27:53 +0000
+
+minuet (17.04.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 19 Apr 2017 13:07:09 +0000
+
+minuet (16.12.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Mar 2017 13:51:28 +0000
+
+minuet (16.12.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Feb 2017 17:04:48 +0000
+
+minuet (16.12.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 11 Jan 2017 13:26:06 +0000
+
+minuet (16.12.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 14 Dec 2016 16:33:14 +0000
+
+minuet (16.08.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 21 Nov 2016 13:55:08 +0000
+
+minuet (16.08.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 14 Oct 2016 13:41:38 +0000
+
+minuet (16.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 16 Sep 2016 13:08:53 +0000
+
+minuet (16.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 17 Aug 2016 11:51:14 +0000
+
+minuet (16.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 12 Jul 2016 11:36:48 +0000
+
+minuet (16.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 16 Jun 2016 11:09:20 +0000

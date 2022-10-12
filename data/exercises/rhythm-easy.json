@@ -1,0 +1,18 @@
+{
+  "exercises": [
+    {
+      "name": "Rhythm",
+      "playMode": "rhythm",
+      "userMessage": "Hear the rhythm and then choose an answer from options below",
+      "template": "lilypond-templates/rhythm.ly.tmpl",
+      "numberOfSelectedOptions": 4,
+      "_icon": "minuet-rhythms.svg",
+      "children": [
+        {
+            "name": "Easy",
+            "and-tags": ["rhythm", "easy"]
+        }
+      ]
+    }
+  ]
+}
